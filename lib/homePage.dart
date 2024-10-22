@@ -2,6 +2,7 @@
 
 
 import 'package:flutter/material.dart';
+import 'package:test_project/favorite.dart';
 import 'package:test_project/login_page.dart';
 import 'package:test_project/rePage.dart';
 
@@ -12,7 +13,7 @@ class Homepage extends StatefulWidget {
 }
 
 class _HomepageState extends State<Homepage> {
-  List<Widget>pages = [LoginPage(),Repage()];
+  List<Widget>pages = [LoginPage(),Repage(),FavoritePage()];
   int _selectedIndex = 0;
   void _onItemTapped(int index) {
     setState(() {
